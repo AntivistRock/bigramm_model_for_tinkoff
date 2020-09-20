@@ -1,7 +1,7 @@
 from re import sub, findall
 import codecs
 import pickle
-from random import choice
+from random import choice, seed
 
 
 class model_v1:
@@ -13,6 +13,10 @@ class model_v1:
             self.bigr_freq = freq
             self.mono_freq = power
         self.train_text = ''
+
+    # инициализирует сид для random
+    def ch_seed(self, usr_seed=1):
+        seed(int(usr_seed))
 
     # предобработка текста
     def fit(self, path):

@@ -19,5 +19,3 @@ corpus = model.fit(path)
 
 model.generate(corpus)
 model.save_freq(name, save_way)
-
-# python C:\Users\idkon\Documents\tinkoff_generation\selection\text_preprocessing_script.py -n test_Main -d C:\Users\idkon\Documents\tinkoff_generation\selection\chistiy_ponedelnik.txt -s C:\Users\idkon\Documents\tinkoff_generation\selection\
